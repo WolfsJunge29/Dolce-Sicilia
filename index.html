@@ -6,17 +6,29 @@
 
   <title>Speisekarte</title>
 
-  <meta http-equiv="refresh" content="0; url=Speisekarte.pdf">
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+    }
 
-  <script>
-    window.location.replace("Speisekarte.pdf");
-  </script>
+    .speisekarte {
+      display: block;
+      width: 100%;
+      max-width: 1200px;
+      height: auto;
+      margin: 0 auto;
+    }
+  </style>
 </head>
 
 <body>
-  <p>
-    Die Speisekarte wird geöffnet.
-    <a href="Speisekarte.jpg">Speisekarte öffnen</a>
-  </p>
+  <img
+    class="speisekarte"
+    src="Speisekarte.jpg"
+    alt="Unsere Speisekarte"
+  >
 </body>
 </html>
