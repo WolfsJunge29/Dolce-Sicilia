@@ -4,22 +4,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Speisekarte</title>
+  <title>Speisekarte – Dolce Sicilia</title>
 
   <style>
+    :root {
+      color-scheme: light dark;
+    }
+
     html,
     body {
       margin: 0;
       padding: 0;
+      min-height: 100%;
       background: #ffffff;
     }
 
     .speisekarte {
       display: block;
       width: 100%;
-      max-width: 1200px;
+      max-width: 1400px;
       height: auto;
       margin: 0 auto;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      html,
+      body {
+        background: #121212;
+      }
+
+      .speisekarte {
+        filter: invert(1) hue-rotate(180deg);
+      }
     }
   </style>
 </head>
@@ -28,7 +44,7 @@
   <img
     class="speisekarte"
     src="Speisekarte.jpg"
-    alt="Unsere Speisekarte"
+    alt="Speisekarte Dolce Sicilia"
   >
 </body>
 </html>
